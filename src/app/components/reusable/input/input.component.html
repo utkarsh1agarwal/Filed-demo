@@ -1,0 +1,23 @@
+
+
+<div [formGroup]="parent" style="margin-bottom: 1.3rem;">
+    <input
+    [type]="inputObj.type"
+    class="input"
+    [ngClass]="{ 'is-invalid': _submitted && f.errors }"
+    [ngClass]="[(_submitted && f.errors)?'is-invalid':'',
+    (inputObj.formControlName == 'firstName')?'is-transform':'',
+    (inputObj.formControlName == 'lastName')?'is-transform':'']"
+    [formControlName]="inputObj.formControlName"
+    [placeholder]="inputObj.title"
+/>
+<div *ngIf="_submitted && f.errors" class="invalid-feedback">
+    <div *ngIf="f.hasError('required') ">{{inputObj.required}}</div>
+    <div *ngIf="f.hasError('email') ">{{inputObj.valid}}</div>
+    <div *ngIf="f.hasError('maxlength') ">Max 10 digit allowed</div>
+    <div *ngIf="f.hasError('minlength') ">Min 10 digit required</div>
+
+</div>
+</div>
+
+

@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+$color-red: #FF0000;
+
+:root {
+    --color-light-blue: #38CCF5;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    @media only screen and (min-width: 768px) {
+    }
+}
+
+.form-container {
+    border-radius: 1rem;
+    background: #fbfbfb;
+    padding: 0.2rem;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media only screen and (min-width: 768px) {
+        width: 60%;
+        padding: 2rem;
+        margin-top: 6rem;
+    }
+}
+.btn-back, .btn-submit {
+    width: 85%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 18px;
+    text-transform: uppercase;
+    outline: none;
+    margin-bottom: 1rem;
+    margin-left: 6%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    @media only screen and (min-width: 768px) {
+        border-radius: 1rem;
+        width: 100%;
+        margin-left: 2%;
+        padding: 0.85rem;
+    }
+}
+.btn-submit {
+    background: #ff6e4e;
+    &:hover {
+        background: #4CAF50;
+    }
+}
+
+.btn-back {
+    background: white;
+    color: black;
+    @media only screen and (min-width: 768px) {
+        width: 17%;
+    }
+}
+
+.input {
+    width: 85%;
+    margin-left: 4%;
+    height: 2.3rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    border-color: #dedede;
+    padding-left: 1rem;
+    @media only screen and (min-width: 768px) {
+        width: 90%;
+    }
+
+    &:focus {
+        border: 2px solid #008cc9;
+        outline: none;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+}
+
+.flex-non-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.invalid-feedback {
+    color: red;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.custom-radio {
+    width: 45%;
+}
+
+.select {
+    padding: 0.7rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+    }
+
+    &:focus {
+        border: 2px solid #008cc9;
+        outline: none;
+        
+    }
+}
+
+.select-options {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+table, td, th {
+    border: 1px solid black;
+  }
+  td,th {
+      text-align: center;
+  }
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  td {
+      font-weight: 600;
+      background: aliceblue;
+      opacity: 0.8;
+  }

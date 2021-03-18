@@ -1,0 +1,33 @@
+ul {
+    display: none;
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
+    @media only screen and (min-width: 790px) {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1rem;
+    overflow: hidden;
+    background-color: #595957;
+    max-width: 100rem;
+    margin: auto;
+    }
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #4CAF50;
+  }
+  

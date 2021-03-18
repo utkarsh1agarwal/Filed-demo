@@ -1,0 +1,28 @@
+<div class="form-container">
+    <h3 class="form-title">We’ll be in touch to get your trial set up.</h3>
+    <p style="text-align: center;">Fill Out Form</p>
+    <div class="form">
+        <form [formGroup]="getFreeTrial" (ngSubmit)="onSubmit()" #userForm="ngForm">
+            <div class="flex-non-wrap block">
+                <div class="fname">
+                    <app-input [controllerData]="data.firstName" [validation]="getFreeTrial.controls.firstName"
+                    [submitted]="submitted" [parent]="getFreeTrial"></app-input>
+                </div>
+                <div class="fname">
+                    <app-input [controllerData]="data.lastName" [validation]="getFreeTrial.controls.lastName"
+                    [submitted]="submitted" [parent]="getFreeTrial"></app-input>
+                </div>
+            </div>
+            <app-input [controllerData]="data.email" [validation]="getFreeTrial.controls.email"
+            [submitted]="submitted" [parent]="getFreeTrial"></app-input>
+            <app-input [controllerData]="data.budget" [validation]="getFreeTrial.controls.budget"
+            [submitted]="submitted" [parent]="getFreeTrial"></app-input>
+            <app-input [controllerData]="data.phone" [validation]="getFreeTrial.controls.phone"
+            [submitted]="submitted" [parent]="getFreeTrial"></app-input>
+      <div class="button-container">
+        <button type="submit" class="btn-submit">GET FREE TRIAL</button>
+    </div>
+</form>
+     
+    </div>
+  </div>
