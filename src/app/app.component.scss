@@ -1,0 +1,96 @@
+.container-1, .container-3 {
+    @media only screen and (min-width: 768px) {
+        padding: 3rem;
+    }
+}
+.c1-block {
+    width: 100%;
+    padding: 0 0.2rem;
+    max-width: 30rem;
+    @media only screen and (min-width: 768px) {
+     padding: 2rem;
+     margin-left: 3rem;
+    }
+}
+
+.c1-block-grid {
+    position: absolute;
+    left: -1rem;
+    top: 52rem;
+    z-index: -1;
+    @media only screen and (min-width: 768px) {
+        top: 17rem;
+    }
+}
+
+.c2-block-grid {
+    position: absolute;
+    left: 56rem;
+    top: 7rem;
+    z-index: -1;
+    @media only screen and (min-width: 768px) {
+        top: 4rem;
+    }
+}
+
+.ellipse-1 {
+    left: 7rem;
+    top: -10rem;
+    position: absolute;
+
+    z-index: -1;
+    
+    @media only screen and (min-width: 768px) {
+        top: -1rem;
+        left: 32rem;
+    }
+}
+
+.ellipse-4 {
+    left: 17.5rem;
+    top: 20rem;
+    position: absolute;
+    z-index: -1;
+    @media only screen and (min-width: 768px) {
+        top: 27rem;
+        left: 26.5rem;
+    }
+}
+
+.ellipse-2 {
+    left: 14rem;
+    top: 10rem;
+    z-index: -1;
+    position: absolute;
+    @media only screen and (min-width: 768px) {
+        top: 18rem;
+        left: 30rem;
+    }
+}
+
+.ellipse-3 {
+    left: 16rem;
+    top: 16rem;
+    z-index: -1;
+    position: absolute; 
+    @media only screen and (min-width: 768px) {
+        top: 23.5rem;
+        left: 28rem;
+    }
+}
+
+
+.h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 2.5rem;
+
+    }
+}

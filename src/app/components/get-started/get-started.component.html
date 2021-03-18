@@ -1,0 +1,50 @@
+<div class="form-container">
+    <h3 class="form-title">Let's Start</h3>
+    <p style="text-align: center;padding: 0 2rem;">Fill out the form and we'll get in touch to
+        get your trial set up.</p>
+    <div class="form">
+        <form [formGroup]="getStarted" (ngSubmit)="onSubmit()"
+            #userForm="ngForm">
+            <div class="radio-container">
+                <h4 class="h4">Do you want to make ads that convert?</h4>
+                <div class="flex-non-wrap">
+                    <div class="custom-radio">
+                        <input id="yes" type="radio"
+                            class="custom-control-input" value="yes"
+                            name="convert" formControlName="convert">
+                        <label class="custom-control-label" for="yes">Yes</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input id="no" type="radio" class="custom-control-input"
+                            value="no" name="convert" formControlName="convert">
+                        <label class="custom-control-label" for="yes">No</label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="select-container">
+                <h4 class="h4">
+                    What's your monthly ad budget?
+                </h4>
+                <div>
+                    <select class="select"
+                    [ngClass]="{ 'is-invalid-select': submitted && f.budget.value == 'select' }"
+                    name="select-budget" id="select-budget" formControlName="budget">
+                        <option class="select-options" *ngFor="let budget of budgets" [value]="budget.value">
+                            {{ budget.name }}
+                        </option>
+
+                    </select>
+                </div>
+                <div *ngIf="submitted && f.budget.value == 'select'" class="invalid-feedback">
+                    <div>Please select budget</div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn-submit">GET STARTED</button>
+            </div>
+        </form>
+
+    </div>
+</div>
