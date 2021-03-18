@@ -1,0 +1,22 @@
+.radio-container {
+    margin-bottom: 1rem;
+}
+
+.h4{
+    margin-bottom: 0.75rem;
+}
+
+.custom-control-label {
+    margin-left: 0.5rem;
+}
+
+.is-invalid-select {
+    margin-bottom: 0.5rem;
+}
+
+.form {
+    padding-left: 1rem;
+    @media only screen and (min-width: 768px) {
+    padding-left: 0;
+    }
+}

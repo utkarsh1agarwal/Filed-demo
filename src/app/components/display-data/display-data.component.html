@@ -1,0 +1,30 @@
+<div class="display-container">
+    <h3 style="font-size: 2.5rem;">Data from NgRx Store</h3>
+
+    <table>
+        <tr>
+            <th>Full Name</th>
+            <td>{{table_data.firstName}} {{table_data.firstName}} </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{table_data.email}}</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>{{table_data.phone}}</td>
+        </tr>
+        <tr>
+            <th>Budget</th>
+            <td>{{table_data.budget}}</td>
+        </tr>
+    </table>
+
+    <div class="button-container">
+        <button type="button" (click)="onBack()" class="btn-back">Back</button>
+        <button type="submit" (click)="onSubmit()" class="btn-submit btn-custom">Proceed to Payment </button>
+    </div>
+
+
+
+</div>

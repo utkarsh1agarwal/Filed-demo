@@ -1,0 +1,63 @@
+
+<div class="container-2">
+    <div class="c2-inner">
+      <p class="text-primary">Our Offer: Intelligent Automation. Real-time Insights. Unparalleled Results.</p>
+  
+    </div>
+  </div>
+  
+  <div class="container-3">
+    <div class="flex">
+  
+    
+    <div class="c3-block">
+      <p class="c3-title">The <span style="color: var(--color-light-blue);">Benefits</span> of using Filed</p>
+    </div>
+    <div class="c3-block">
+      <ul>
+        <li>Ability to scale using Dexter, our AI-powered marketing genius.</li>
+        <li>Client Success Manager who will optimize your Facebook ad campaigns and focus on driving the best possible results for you.</li>
+        <li>This is a limited time offer only.</li>
+      </ul>
+    </div>
+  </div>
+  
+  </div>
+  
+  <div class="container-4">
+    <div class="flex">
+  
+      <div *ngFor="let a of testimonials" class="profile">
+        <div class="flex-non-wrap">
+          <div>
+            <img src="/assets/icons/Icon-material-format-quote.svg" alt="">
+  
+          </div>
+          <div style="padding-left: 1rem;">
+            <span style="font-size: 2rem;">{{a.quote}}</span>
+          </div>
+  
+        </div>
+        <div class="desc">
+          {{a.desc}}
+         </div>
+        <div class="flex-non-wrap">
+          <div>
+            <img src="{{a.img}}" alt="" style="border-radius: 50%; width: 7rem;">
+  
+          </div>
+          <div style="font-size: 1rem; padding-left: 1rem;">
+          <span>{{a.name}}</span>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+  <app-nav-bar></app-nav-bar>
+  
+  <div class="footer">
+  
+  </div>

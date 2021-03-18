@@ -1,4 +1,5 @@
-# Angular Project for Filed
+
+# Demo Angular Project for Filed
 
 This is a test project to demonstrate responsive and Angular features like reactive forms, routing, services, resuable components, Ngrx store etc.
 
@@ -19,27 +20,9 @@ Install the `npm` packages described in the `package.json` and verify that it wo
 npm install ( if already exist use npm update)
 ng s
 ```
-If running in local use `ng s` and it will comiple the application and runs runs `lite-server` on port `4200` i.e` https://localhost:4200`.
-or
-The `npm start` command builds (compiles TypeScript and copies assets) the application into `dist/`, watches for changes to the source files, and runs `lite-server` on port `3000`.
+## Development server
 
-Shut it down manually with `Ctrl-C`.
-
-#### npm scripts
-
-These are the most useful commands defined in `package.json`:
-
-* `npm start` - runs the TypeScript compiler, asset copier, and a server at the same time, all three in "watch mode".
-* `npm run build` - runs the TypeScript compiler and asset copier once.
-* `npm run build:watch` - runs the TypeScript compiler and asset copier in "watch mode"; when changes occur to source files, they will be recompiled or copied into `dist/`.
-* `npm run lint` - runs `tslint` on the project files.
-* `npm run serve` - runs `lite-server`.
-
-These are the test-related scripts:
-
-* `npm test` - builds the application and runs Intern tests (both unit and functional) one time.
-* `npm run ci` - cleans, lints, and builds the application and runs Intern tests (both unit and functional) one time.
-
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 **Details**
 
@@ -75,3 +58,26 @@ Obligations:
 - Make sure to avoid any memory leaks.
 - The design should be pixel perfect and responsive ( https://xd.adobe.com/view/f5c37cba-a980-4d71-
 9630-c7ab049aa5f4-a090/screen/96da058d-3014-4ede-bee2-6993f4ca1a04/ ).
+
+# AngularTest
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+
+
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+

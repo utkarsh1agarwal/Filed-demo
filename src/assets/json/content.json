@@ -1,0 +1,42 @@
+{
+    "components": {
+        "get-free-trial": {
+            "firstName" :{
+                "title": "First Name *",
+                "type": "text",
+                "formControlName": "firstName",
+                "required": "First name is required"
+            },
+            "lastName" :{
+                "title": "Last Name *",
+                "type": "text",
+                "formControlName": "lastName",
+                "required": "Last name is required"
+
+            },
+            "email" :{
+                "title": "Email *",
+                "type": "email",
+                "formControlName": "email",
+                "required": "Email is required",
+                "valid": "Must be a valid email"
+
+            },
+            "budget" :{
+                "title": "Budget *",
+                "type": "number",
+                "formControlName": "budget",
+                "required": "Budget value is required"
+
+            },
+            "phone" :{
+                "title": "Phone Number *",
+                "type": "number",
+                "formControlName": "phone",
+                "required": "Phone number is required"
+
+            }
+
+        }
+    }
+}
