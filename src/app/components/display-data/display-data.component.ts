@@ -33,7 +33,7 @@ export class DisplayDataComponent implements OnInit {
         }
       }
     });
-    this.table_data = this.form_data[1]
+    this.table_data = this.form_data[this.form_data.length - 1]
   }
 
   onSubmit() {
