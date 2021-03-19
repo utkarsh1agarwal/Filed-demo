@@ -105,4 +105,9 @@ export class GetFreeTrialComponent implements OnInit {
       return convertString.join(' ');
     }
   }
+
+  // Destroy the object to avoid memory leak
+  ngOnDestroy() {
+    this.subs.unsubscribe(); 
+   }
 }
