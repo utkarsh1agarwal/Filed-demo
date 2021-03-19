@@ -48,4 +48,9 @@ export class DisplayDataComponent implements OnInit {
   }
 
   ngOnInit(): void { }
+
+  // Destroy the object to avoid memory leak
+  ngOnDestroy() {
+    this.subs.unsubscribe(); 
+  }
 }
