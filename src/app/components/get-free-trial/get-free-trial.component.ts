@@ -83,8 +83,7 @@ export class GetFreeTrialComponent implements OnInit {
   payload(form) {
     const dataModel = new FreeTrialFormModel();
     dataModel.firstName = this.convertToTitleCase(form.firstName.value);
-    dataModel.firstName = this.convertToTitleCase(form.firstName.value);
-    dataModel.lastName = form.lastName.value;
+    dataModel.lastName = this.convertToTitleCase(form.lastName.value);
     dataModel.email = form.email.value;
     dataModel.budget = form.budget.value;
     dataModel.phone = form.phone.value;
